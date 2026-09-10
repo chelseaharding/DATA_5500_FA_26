@@ -1,1 +1,0 @@
-print("today is Thursday :)")

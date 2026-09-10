@@ -2,3 +2,5 @@
 this is where I will write all my code for the semester :)
 
 
+I love Python :,)
+
