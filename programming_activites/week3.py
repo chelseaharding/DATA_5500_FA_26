@@ -59,3 +59,62 @@ elif birth_year >= 1965:
     print("You are gen X")
 else:
     print("You are a baby boomer")
+
+"""
+Programming Activity 5
+
+Write a program which asks the user their age, then using a while loop displays the year they were born, using the following rules:
+ - continue the loop while age is greater than 1
+ - print each time "you were alive in year: " current_year
+ - decrease age and current_year by one each time
+ - add an else saying "you were born in year: " current_year
+"""
+age = int(input("How old are you: "))
+current_year = 2026
+
+while age >= 1:
+    print("You were alive in", current_year)
+    age -= 1
+    current_year -= 1
+else:
+    print("you were born in", current_year)
+
+"""
+Programming Activity 6
+
+Write a program that prints all the multiples of 5, from 5 to 95 using a for loop. 
+"""
+for i in range(5, 96, 5):
+    print("i:", i)
+
+"""
+Programming Activity 7
+
+Write a program that prints all the multiples of 5, from 5 to 95 using a while loop.
+"""
+num = 0
+while num < 96:
+    print("num:", num)
+    num += 5
+
+"""
+Programming Activity 8
+
+Write a program which can tell if a 3 digit number is a palindrome. 
+ - Create a variable, which stores user input. Prompt the user to enter a 3 digit number. 
+ - Convert the user input into a integer (int). To get the first digit alone, floor division by 100. 
+ - To get the 3rd digit alone, modulus by 10. 
+ - Check if the first digit and 3rd digit are the same. 
+ - If they are the same print("palindrome!!!!"). 
+ - Else print("not palindrome!")
+"""
+
+palindrome_maybe = int(input("Enter a 3 digit number: "))
+
+first_num = palindrome_maybe // 100
+third_num = palindrome_maybe % 10
+
+if first_num == third_num:
+    print("your number is a palindrome")
+else:
+    print("your number is not a palindrome")
