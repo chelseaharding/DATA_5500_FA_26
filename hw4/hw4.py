@@ -17,7 +17,7 @@ def simpleMovingAverage(prices): # will probably need arguments but I don't know
 
 # define function saveResults
 def saveResults(results_dictionary):
-    pass
+    json.dump(results_dictionary, open("/workspaces/DATA_5500_FA_26/hw4/results.json", "w"))
 
 
 # create list to store 10 tickers/stocks
